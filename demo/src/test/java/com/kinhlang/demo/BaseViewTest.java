@@ -10,7 +10,7 @@ public class BaseViewTest {
     @Test
     public void A() {
         BaseViewA viewA = new BaseViewA();
-        viewA.setName("ViewA");
+        viewA.setClazz("ViewA");
         Field[] fields= viewA.getClass().getDeclaredFields();
         for (Field field:fields) {
             field.setAccessible(true);
@@ -18,6 +18,6 @@ public class BaseViewTest {
         }
 //        System.exit(0);
         System.out.println(BaseClazz.enName);
-        System.out.println(viewA.getName());
+        System.out.println(viewA.getClazz());
     }
 }

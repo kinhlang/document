@@ -20,12 +20,12 @@ public class BaseViewA extends BaseClazz {
         this.code = code;
     }
 
-    public String getName() {
+    public String getClazz() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setClazz(String clazz) {
+        this.name = clazz;
     }
 
     @Override

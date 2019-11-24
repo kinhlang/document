@@ -4,7 +4,7 @@ public class BaseClazz {
     /**
      * 名称
      */
-    private String name;
+    public String clazz;
 
     public static String enName = "初值";
 
@@ -16,12 +16,12 @@ public class BaseClazz {
 //        enName = "构造方法";
     }
 
-    public String getName() {
-        return name;
+    public String getClazz() {
+        return clazz;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setClazz(String clazz) {
+        this.clazz = clazz;
     }
 
     @Override
@@ -29,4 +29,6 @@ public class BaseClazz {
         super.finalize();
         System.out.println("销毁BaseClazz");
     }
+
+
 }
